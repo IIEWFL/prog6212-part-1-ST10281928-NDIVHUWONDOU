@@ -1,0 +1,42 @@
+﻿@model IEnumerable<ContractMonthlyClaimSystem.Models.Claim>
+
+<h2>Claims</h2>
+
+<a asp-action="Create">Submit New Claim</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Module</th>
+            <th>Hours</th>
+            <th>Rate</th>
+            <th>Status</th>
+            <th>Document</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var claim in Model)
+        {
+            <tr>
+                <td>@claim.Module</td>
+                <td>@claim.HoursWorked</td>
+                <td>@claim.HourlyRate</td>
+                <td>@claim.Status</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(claim.DocumentPath))
+                    {
+                        <a href="@claim.DocumentPath" target="_blank">View File</a>
+                    }
+                    else
+                    {
+                        <span>No File</span>
+                    }
+                </td>
+                <td><a asp-action="Details" asp-route-id="@claim.Id">View</a></td>
+            </tr>
+        }
+    </tbody>
+
+</table>

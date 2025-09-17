@@ -1,0 +1,27 @@
+﻿@model ContractMonthlyClaimSystem.Models.Claim
+
+<h2>Submit New Claim</h2>
+<form asp-action="Create" method="post">
+    <div>
+        <label>Lecturer Name:</label>
+        <input asp-for="LecturerName" />
+    </div>
+    <div>
+        <label>Module:</label>
+        <input asp-for="Module" />
+    </div>
+    <div>
+        <label>Hours Worked:</label>
+        <input asp-for="HoursWorked" />
+    </div>
+    <div>
+        <label>Hourly Rate:</label>
+        <input asp-for="HourlyRate" />
+    </div>
+    <div>
+        <label>Upload Document</label>
+        <input type="file" name="document"  class="form-control"/>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
