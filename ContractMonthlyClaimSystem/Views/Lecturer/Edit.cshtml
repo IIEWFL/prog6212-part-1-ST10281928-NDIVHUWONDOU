@@ -1,15 +1,11 @@
 ﻿@model ContractMonthlyClaimSystem.Models.Claim
 @{
-    ViewData["Title"] = "Submit New Claim";
+    ViewData["Title"] = "Edit Claim";
 }
 
-<section class="mb-3">
-    <h1 class="fw-semibold mb-1">Submit New Claim</h1>
-    <div class="text-muted">Provide the details below and attach a supporting document if required.</div>
-</section>
-
 <div class="form-card soft-card p-4 p-md-5">
-    <form asp-action="Create" method="post" enctype="multipart/form-data" novalidate>
+    <form asp-action="Edit" method="post" enctype="multipart/form-data" novalidate>
+        <input type="hidden" asp-for="Id" />
         <div asp-validation-summary="ModelOnly" class="alert alert-danger d-none" id="valSummary"></div>
 
         <div class="form-grid">
@@ -69,7 +65,7 @@
 
                 <div class="d-flex gap-2 mt-3">
                     <button type="submit" class="btn btn-brand">
-                        <i class="bi bi-send"></i> Submit
+                        <i class="bi bi-send">Save</i>
                     </button>
                     <button type="reset" class="btn btn-outline-brand" id="resetBtn">
                         <i class="bi bi-arrow-counterclockwise"></i> Reset
@@ -79,8 +75,6 @@
                     </a>
                 </div>
             </div>
-
-            
 
             <aside class="form-aside soft-card p-3">
                 <div class="d-flex align-items-center justify-content-between mb-2">
@@ -99,7 +93,6 @@
     </form>
 </div>
 
-
 @section Scripts {
     <script>
         // show validation summary if there are errors
@@ -116,14 +109,6 @@
           const sR = document.getElementById('sRate');
           const sT = document.getElementById('sTotal');
           function fmt(n){ return isNaN(n) ? '0' : n.toString(); }
-
-          @* //Code Attribution 
-            //This method was taken from W3Schools — JavaScript Calculate on Input
-            //https://www.w3schools.com/jsref/event_oninput.asp
-            //W3Schools Online Web Tutorials
-            //https://www.w3schools.com
-            //https://www.w3schools.com/jsref/event_oninput.asp *@
-
           function calc(){
             const h = parseFloat(hours?.value || '0');
             const r = parseFloat(rate?.value  || '0');

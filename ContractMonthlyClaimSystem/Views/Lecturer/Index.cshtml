@@ -1,42 +1,176 @@
 ﻿@model IEnumerable<ContractMonthlyClaimSystem.Models.Claim>
+@using System.Linq
 
-<h2>Claims</h2>
+@{
+    ViewData["Title"] = "Lecturer Portal";
+    var items = Model ?? Enumerable.Empty<ContractMonthlyClaimSystem.Models.Claim>();
 
-<a asp-action="Create">Submit New Claim</a>
+    var totalClaims = items.Count();
+    var totalHours = items.Sum(x => x.HoursWorked);
+    var pending = items.Count(x => (x.Status ?? "").ToLower() == "pending");
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Module</th>
-            <th>Hours</th>
-            <th>Rate</th>
-            <th>Status</th>
-            <th>Document</th>
-            <th></th>
-        </tr>
-    </thead>
-
-    <tbody>
-        @foreach (var claim in Model)
+    string StatusClass(string s)
+    {
+        if (string.IsNullOrWhiteSpace(s)) return "badge-pending";
+        switch (s.Trim().ToLowerInvariant())
         {
-            <tr>
-                <td>@claim.Module</td>
-                <td>@claim.HoursWorked</td>
-                <td>@claim.HourlyRate</td>
-                <td>@claim.Status</td>
-                <td>
-                    @if (!string.IsNullOrEmpty(claim.DocumentPath))
-                    {
-                        <a href="@claim.DocumentPath" target="_blank">View File</a>
-                    }
-                    else
-                    {
-                        <span>No File</span>
-                    }
-                </td>
-                <td><a asp-action="Details" asp-route-id="@claim.Id">View</a></td>
-            </tr>
+            case "approved": return "badge-approved";
+            case "rejected": return "badge-rejected";
+            case "accessed": return "badge-approved";
+            default: return "badge-pending";
         }
-    </tbody>
+    }
+}
 
-</table>
+<section class="mb-3">
+    <div class="d-flex flex-wrap justify-content-between align-items-end gap-2">
+        <div>
+            <h1 class="fw-semibold mb-1">My Claims</h1>
+            <div class="text-muted">Create, track, and manage your monthly claims.</div>
+        </div>
+        <div class="d-flex gap-2 flex-wrap">
+            <a asp-action="Create" class="btn btn-brand">
+                <i class="bi bi-plus-circle"></i> Submit New Claim
+            </a>
+        </div>
+    </div>
+</section>
+
+<div class="row g-3 mb-3">
+    <div class="col-md-4">
+        <div class="soft-card p-3">
+            <div class="text-muted small">Total Claims</div>
+            <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-card-checklist"></i><div class="fs-5 fw-semibold">@totalClaims</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="soft-card p-3">
+            <div class="text-muted small">Hours Submitted</div>
+            <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-clock"></i><div class="fs-5 fw-semibold">@totalHours</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="soft-card p-3">
+            <div class="text-muted small">Pending</div>
+            <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-hourglass-split"></i><div class="fs-5 fw-semibold">@pending</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="soft-card p-3 mb-3">
+    <div class="d-flex flex-wrap align-items-center gap-2">
+        <div class="flex-grow-1">
+            <input id="searchInput" type="search" class="form-control" placeholder="Search module, status…" />
+        </div>
+        <div class="d-flex flex-wrap gap-2">
+            <button class="chip active" data-status="all">All</button>
+            <button class="chip" data-status="pending">Pending</button>
+            <button class="chip" data-status="approved">Approved</button>
+            <button class="chip" data-status="rejected">Rejected</button>
+            <button class="chip" data-status="accessed">Accessed</button>
+        </div>
+    </div>
+</div>
+
+<div class="table-container">
+    <table class="table table-hover align-middle mb-0" id="claimsTable">
+        <thead>
+            <tr>
+                <th>Module</th>
+                <th class="text-end">Hours</th>
+                <th class="text-end">Rate</th>
+                <th>Status</th>
+                <th>Document</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in items)
+            {
+                <tr data-status="@item.Status?.ToLowerInvariant()">
+                    <td>@item.Module</td>
+                    <td class="text-end">@item.HoursWorked</td>
+                    <td class="text-end">@item.HourlyRate</td>
+                    <td><span class="badge-status @(StatusClass(item.Status))">@item.Status</span></td>
+                    <td>
+                        @if (!string.IsNullOrWhiteSpace(item.DocumentPath))
+                        {
+                            <a href="@Url.Content(item.DocumentPath)">View</a>
+                        }
+                        else
+                        {
+
+                            <span class="text-muted">No File</span>
+                        }
+                    </td>
+                    <td>
+                        <div class="d-flex gap-2 flex-wrap">
+                            <a asp-action="Details" class="btn btn-brand" asp-route-id="@item.Id">
+                                <i class="bi bi-plus-circle"></i> Details
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="">
+                            <a asp-action="Edit" class="btn btn-brand" asp-route-id="@item.Id">
+                                <i class="bi bi-plus-circle"></i> Edit
+                            </a>
+                        </div>
+                    <td>
+                        <div class="">
+                            <a asp-action="Delete" class="btn btn-brand" asp-route-id="@item.Id">
+                                <i class="bi bi-plus-circle"></i> Delete
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div id="emptyState" class="text-center text-muted py-5 d-none">
+    <i class="bi bi-search fs-3 d-block mb-2"></i>
+    <div>No matching records.</div>
+</div>
+
+@section Scripts {
+    <script>
+        (function(){
+          const chips = document.querySelectorAll(".chip");
+          const search = document.getElementById("searchInput");
+          const rows  = Array.from(document.querySelectorAll("#claimsTable tbody tr"));
+          const empty = document.getElementById("emptyState");
+          let filterStatus = "all";
+
+          const apply = () => {
+            const q = (search.value || "").toLowerCase().trim();
+            let any = 0;
+            rows.forEach(tr => {
+              const status = (tr.getAttribute("data-status") || "").toLowerCase();
+              const text = tr.textContent.toLowerCase();
+              const statusOk = (filterStatus === "all") || (status === filterStatus);
+              const searchOk = q === "" || text.indexOf(q) !== -1;
+              const show = statusOk && searchOk;
+              tr.style.display = show ? "" : "none";
+              if (show) any++;
+            });
+            empty.classList.toggle("d-none", any !== 0);
+          };
+
+          chips.forEach(c => c.addEventListener("click", () => {
+            chips.forEach(x => x.classList.remove("active"));
+            c.classList.add("active");
+            filterStatus = c.getAttribute("data-status");
+            apply();
+          }));
+          search.addEventListener("input", apply);
+        })();
+    </script>
+}

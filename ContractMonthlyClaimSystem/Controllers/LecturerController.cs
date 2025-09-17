@@ -50,5 +50,46 @@ namespace ContractMonthlyClaimSystem.Controllers
             }
             return View(claim);
         }
+
+        //Edit
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            var claim = claims.FirstOrDefault(c => c.Id == id);
+            if (claim == null) return NotFound();
+            return View(claim);
+        }
+        [HttpPost]
+        public IActionResult Edit(Claim updatedclaim)
+        {
+            var claim = claims.FirstOrDefault(c => c.Id == updatedclaim.Id);
+            if (claim == null) return NotFound();
+
+            claim.LecturerName = updatedclaim.LecturerName;
+            claim.Module = updatedclaim.Module;
+            claim.HoursWorked = updatedclaim.HoursWorked;
+            claim.HourlyRate = updatedclaim.HourlyRate;
+            claim.DocumentPath = updatedclaim.DocumentPath;
+            claim.Status = updatedclaim.Status;
+
+            return RedirectToAction("Index");
+        }
+
+        //Delete
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            var claim = claims.FirstOrDefault(c => c.Id == id);
+            if (claim == null) return NotFound();
+            return View(claim);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            var claim = claims.FirstOrDefault(c => c.Id == id);
+            if (claim != null)claims.Remove(claim);
+            return RedirectToAction("Index");
+        }
     }
 }
