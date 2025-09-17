@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\ndoum\\BCAD2_2ndSemester\\Prog2B\\prog6212-part-1-ST10281928-NDIVHUWONDOU\\ContractMonthlyClaimSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{276CB2A6-2168-4EDB-827B-29ACD217F165}|ContractMonthlyClaimSystem.csproj|c:\\users\\ndoum\\bcad2_2ndsemester\\prog2b\\prog6212-part-1-st10281928-ndivhuwondou\\contractmonthlyclaimsystem\\views\\lecturer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{276CB2A6-2168-4EDB-827B-29ACD217F165}|ContractMonthlyClaimSystem.csproj|solutionrelative:views\\lecturer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{276CB2A6-2168-4EDB-827B-29ACD217F165}|ContractMonthlyClaimSystem.csproj|c:\\users\\ndoum\\bcad2_2ndsemester\\prog2b\\prog6212-part-1-st10281928-ndivhuwondou\\contractmonthlyclaimsystem\\models\\claim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{276CB2A6-2168-4EDB-827B-29ACD217F165}|ContractMonthlyClaimSystem.csproj|solutionrelative:models\\claim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{276CB2A6-2168-4EDB-827B-29ACD217F165}|ContractMonthlyClaimSystem.csproj|c:\\users\\ndoum\\bcad2_2ndsemester\\prog2b\\prog6212-part-1-st10281928-ndivhuwondou\\contractmonthlyclaimsystem\\controllers\\claimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{276CB2A6-2168-4EDB-827B-29ACD217F165}|ContractMonthlyClaimSystem.csproj|solutionrelative:controllers\\claimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{276CB2A6-2168-4EDB-827B-29ACD217F165}|ContractMonthlyClaimSystem.csproj|c:\\users\\ndoum\\bcad2_2ndsemester\\prog2b\\prog6212-part-1-st10281928-ndivhuwondou\\contractmonthlyclaimsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{276CB2A6-2168-4EDB-827B-29ACD217F165}|ContractMonthlyClaimSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -43,24 +55,12 @@
       "RelativeMoniker": "D:0:0:{276CB2A6-2168-4EDB-827B-29ACD217F165}|ContractMonthlyClaimSystem.csproj|solutionrelative:controllers\\lecturercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{276CB2A6-2168-4EDB-827B-29ACD217F165}|ContractMonthlyClaimSystem.csproj|c:\\users\\ndoum\\bcad2_2ndsemester\\prog2b\\prog6212-part-1-st10281928-ndivhuwondou\\contractmonthlyclaimsystem\\models\\claim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{276CB2A6-2168-4EDB-827B-29ACD217F165}|ContractMonthlyClaimSystem.csproj|solutionrelative:models\\claim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{276CB2A6-2168-4EDB-827B-29ACD217F165}|ContractMonthlyClaimSystem.csproj|c:\\users\\ndoum\\bcad2_2ndsemester\\prog2b\\prog6212-part-1-st10281928-ndivhuwondou\\contractmonthlyclaimsystem\\views\\lecturer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{276CB2A6-2168-4EDB-827B-29ACD217F165}|ContractMonthlyClaimSystem.csproj|solutionrelative:views\\lecturer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{276CB2A6-2168-4EDB-827B-29ACD217F165}|ContractMonthlyClaimSystem.csproj|c:\\users\\ndoum\\bcad2_2ndsemester\\prog2b\\prog6212-part-1-st10281928-ndivhuwondou\\contractmonthlyclaimsystem\\views\\lecturer\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{276CB2A6-2168-4EDB-827B-29ACD217F165}|ContractMonthlyClaimSystem.csproj|solutionrelative:views\\lecturer\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{276CB2A6-2168-4EDB-827B-29ACD217F165}|ContractMonthlyClaimSystem.csproj|c:\\users\\ndoum\\bcad2_2ndsemester\\prog2b\\prog6212-part-1-st10281928-ndivhuwondou\\contractmonthlyclaimsystem\\views\\claim\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{276CB2A6-2168-4EDB-827B-29ACD217F165}|ContractMonthlyClaimSystem.csproj|solutionrelative:views\\claim\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{276CB2A6-2168-4EDB-827B-29ACD217F165}|ContractMonthlyClaimSystem.csproj|c:\\users\\ndoum\\bcad2_2ndsemester\\prog2b\\prog6212-part-1-st10281928-ndivhuwondou\\contractmonthlyclaimsystem\\controllers\\claimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{276CB2A6-2168-4EDB-827B-29ACD217F165}|ContractMonthlyClaimSystem.csproj|solutionrelative:controllers\\claimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,11 +70,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Users\\ndoum\\BCAD2_2ndSemester\\Prog2B\\prog6212-part-1-ST10281928-NDIVHUWONDOU\\ContractMonthlyClaimSystem\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
@@ -86,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\ndoum\\BCAD2_2ndSemester\\Prog2B\\prog6212-part-1-ST10281928-NDIVHUWONDOU\\ContractMonthlyClaimSystem\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -98,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "LecturerController.cs",
               "DocumentMoniker": "C:\\Users\\ndoum\\BCAD2_2ndSemester\\Prog2B\\prog6212-part-1-ST10281928-NDIVHUWONDOU\\ContractMonthlyClaimSystem\\Controllers\\LecturerController.cs",
               "RelativeDocumentMoniker": "Controllers\\LecturerController.cs",
@@ -110,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\ndoum\\BCAD2_2ndSemester\\Prog2B\\prog6212-part-1-ST10281928-NDIVHUWONDOU\\ContractMonthlyClaimSystem\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -122,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\ndoum\\BCAD2_2ndSemester\\Prog2B\\prog6212-part-1-ST10281928-NDIVHUWONDOU\\ContractMonthlyClaimSystem\\Views\\Claim\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Claim\\Create.cshtml",
@@ -134,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\ndoum\\BCAD2_2ndSemester\\Prog2B\\prog6212-part-1-ST10281928-NDIVHUWONDOU\\ContractMonthlyClaimSystem\\Views\\Claim\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Claim\\Details.cshtml",
@@ -146,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ndoum\\BCAD2_2ndSemester\\Prog2B\\prog6212-part-1-ST10281928-NDIVHUWONDOU\\ContractMonthlyClaimSystem\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -159,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\ndoum\\BCAD2_2ndSemester\\Prog2B\\prog6212-part-1-ST10281928-NDIVHUWONDOU\\ContractMonthlyClaimSystem\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -171,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\ndoum\\BCAD2_2ndSemester\\Prog2B\\prog6212-part-1-ST10281928-NDIVHUWONDOU\\ContractMonthlyClaimSystem\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
@@ -183,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\ndoum\\BCAD2_2ndSemester\\Prog2B\\prog6212-part-1-ST10281928-NDIVHUWONDOU\\ContractMonthlyClaimSystem\\Views\\Lecturer\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Lecturer\\Index.cshtml",
@@ -195,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\ndoum\\BCAD2_2ndSemester\\Prog2B\\prog6212-part-1-ST10281928-NDIVHUWONDOU\\ContractMonthlyClaimSystem\\Views\\Lecturer\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Lecturer\\Create.cshtml",
@@ -203,11 +203,12 @@
               "RelativeToolTip": "Views\\Lecturer\\Create.cshtml",
               "ViewState": "AgIAAAEAAAAAAAAAAAAQwBYAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-17T07:45:21.794Z"
+              "WhenOpened": "2025-09-17T07:45:21.794Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\ndoum\\BCAD2_2ndSemester\\Prog2B\\prog6212-part-1-ST10281928-NDIVHUWONDOU\\ContractMonthlyClaimSystem\\Views\\Lecturer\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Lecturer\\Details.cshtml",
@@ -219,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\ndoum\\BCAD2_2ndSemester\\Prog2B\\prog6212-part-1-ST10281928-NDIVHUWONDOU\\ContractMonthlyClaimSystem\\Views\\Claim\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Claim\\Index.cshtml",
@@ -231,27 +232,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 2,
               "Title": "ClaimController.cs",
               "DocumentMoniker": "C:\\Users\\ndoum\\BCAD2_2ndSemester\\Prog2B\\prog6212-part-1-ST10281928-NDIVHUWONDOU\\ContractMonthlyClaimSystem\\Controllers\\ClaimController.cs",
               "RelativeDocumentMoniker": "Controllers\\ClaimController.cs",
               "ToolTip": "C:\\Users\\ndoum\\BCAD2_2ndSemester\\Prog2B\\prog6212-part-1-ST10281928-NDIVHUWONDOU\\ContractMonthlyClaimSystem\\Controllers\\ClaimController.cs",
               "RelativeToolTip": "Controllers\\ClaimController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAACAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwCAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T20:30:39.425Z"
+              "WhenOpened": "2025-09-16T20:30:39.425Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "Claim.cs",
               "DocumentMoniker": "C:\\Users\\ndoum\\BCAD2_2ndSemester\\Prog2B\\prog6212-part-1-ST10281928-NDIVHUWONDOU\\ContractMonthlyClaimSystem\\Models\\Claim.cs",
               "RelativeDocumentMoniker": "Models\\Claim.cs",
               "ToolTip": "C:\\Users\\ndoum\\BCAD2_2ndSemester\\Prog2B\\prog6212-part-1-ST10281928-NDIVHUWONDOU\\ContractMonthlyClaimSystem\\Models\\Claim.cs",
               "RelativeToolTip": "Models\\Claim.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T20:18:28.303Z"
+              "WhenOpened": "2025-09-16T20:18:28.303Z",
+              "EditorCaption": ""
             }
           ]
         }
